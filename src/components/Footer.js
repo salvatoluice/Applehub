@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="col-5">
               <div className="footer-top-data d-flex gap-30 align-items-center">
                 <img src={newsletter} alt="newsletter" />
-                <h2 className="mb-0 text-white">Subscribe to our Newsletter</h2>
+                <h2 className="mb-0 text-white">Sign Up for our Newsletter</h2>
               </div>
             </div>
             <div className="col-7">
