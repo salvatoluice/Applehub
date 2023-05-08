@@ -20,9 +20,9 @@ const Home = () => {
                 alt="main banner"
               />
               <div className="main-banner-content position-absolute">
-                <h4>SUPERCHARGED FOR PROS.</h4>
+                <h4>GRAB THE CHARGED DEAL!</h4>
                 <h5>iPad S13+ Pro.</h5>
-                <p>From $999.00 or $41.62/mo.</p>
+                <p>From Ksh. 145, 000 or Ksh. 12, 000/mo.</p>
                 <Link className="button">BUY NOW</Link>
               </div>
             </div>
@@ -36,10 +36,10 @@ const Home = () => {
                   alt="main banner"
                 />
                 <div className="small-banner-content position-absolute">
-                  <h4>Best Sake</h4>
-                  <h5>iPad S13+ Pro.</h5>
+                  <h4>Offer of the month</h4>
+                  <h5>macbook air Pro.</h5>
                   <p>
-                    From $999.00 <br /> or $41.62/mo.
+                    From Ksh. 99, 999 <br /> or Ksh. 5, 000/mo.
                   </p>
                 </div>
               </div>
@@ -50,10 +50,10 @@ const Home = () => {
                   alt="main banner"
                 />
                 <div className="small-banner-content position-absolute">
-                  <h4>NEW ARRIVAL</h4>
-                  <h5>But IPad Air</h5>
+                  <h4>Featured Arrival</h4>
+                  <h5>Apple Watch</h5>
                   <p>
-                    From $999.00 <br /> or $41.62/mo.
+                    From Ksh. 60, 000 <br /> or Ksh. 4, 000/mo.
                   </p>
                 </div>
               </div>
@@ -64,10 +64,10 @@ const Home = () => {
                   alt="main banner"
                 />
                 <div className="small-banner-content position-absolute">
-                  <h4>NEW ARRIVAL</h4>
-                  <h5>But IPad Air</h5>
+                <h4>Featured Arrival</h4>
+                  <h5>IPad Air</h5>
                   <p>
-                    From $999.00 <br /> or $41.62/mo.
+                    From Ksh. 124, 000 <br /> or Ksh. 8, 000/mo.
                   </p>
                 </div>
               </div>
@@ -78,10 +78,10 @@ const Home = () => {
                   alt="main banner"
                 />
                 <div className="small-banner-content position-absolute">
-                  <h4>NEW ARRIVAL</h4>
-                  <h5>But IPad Air</h5>
+                  <h4>Featured Arrival</h4>
+                  <h5>A.Headphones</h5>
                   <p>
-                    From $999.00 <br /> or $41.62/mo.
+                    From Ksh. 24, 000 <br /> or Ksh. 800/mo.
                   </p>
                 </div>
               </div>
