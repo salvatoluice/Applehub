@@ -111,60 +111,61 @@ const Home = () => {
       <Container class1="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
+            <h2 className="section-heading">Find Out</h2>
             <div className="categories d-flex justify-content-between flex-wrap align-items-center">
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Music & Gaming</h6>
-                  <p>10 Items</p>
+                  <p>12 Items</p>
                 </div>
                 <img src="images/camera.jpg" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Cameras</h6>
-                  <p>10 Items</p>
+                  <p>45 Items</p>
                 </div>
                 <img src="images/camera.jpg" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Smart Tv</h6>
-                  <p>10 Items</p>
+                  <p>19 Items</p>
                 </div>
                 <img src="images/tv.jpg" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Smart Watches</h6>
-                  <p>10 Items</p>
+                  <p>34 Items</p>
                 </div>
                 <img src="images/headphone.jpg" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
-                  <h6>Music & Gaming</h6>
-                  <p>10 Items</p>
+                  <h6>Phones</h6>
+                  <p>65 Items</p>
                 </div>
                 <img src="images/camera.jpg" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
-                  <h6>Cameras</h6>
-                  <p>10 Items</p>
+                  <h6>Macbooks</h6>
+                  <p>78 Items</p>
                 </div>
                 <img src="images/camera.jpg" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
-                  <h6>Smart Tv</h6>
-                  <p>10 Items</p>
+                  <h6>Earpods & headhones</h6>
+                  <p>165 Items</p>
                 </div>
                 <img src="images/tv.jpg" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
-                  <h6>Smart Watches</h6>
-                  <p>10 Items</p>
+                  <h6>Extras</h6>
+                  <p>278 Items</p>
                 </div>
                 <img src="images/headphone.jpg" alt="camera" />
               </div>
