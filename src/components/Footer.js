@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsYoutube, BsInstagram, BsTwitter } from "react-icons/bs";
 import newsletter from "../images/newsletter.png";
 const Footer = () => {
   return (
@@ -63,8 +63,8 @@ const Footer = () => {
                   <a className="text-white" href="https://github.com/salvatoluice">
                     <BsGithub className="fs-4" />
                   </a>
-                  <a className="text-white" href="#">
-                    <BsYoutube className="fs-4" />
+                  <a className="text-white" href="https://twitter.com/LuiceSalvato">
+                    <BsTwitter className="fs-4" />
                   </a>
                 </div>
               </div>

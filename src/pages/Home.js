@@ -12,6 +12,7 @@ const Home = () => {
     <>
       <Container class1="home-wrapper-1 py-5">
         <div className="row">
+          <h3 className="text-center">The Home Of All Apple Products</h3>
           <div className="col-6">
             <div className="main-banner position-relative ">
               <img
