@@ -225,9 +225,9 @@ const Home = () => {
               />
               <div className="famous-content position-absolute">
                 <h5 className="text-dark">smartphones</h5>
-                <h6 className="text-dark">Smartphone 13 Pro.</h6>
+                <h6 className="text-dark">Iphone 13 Pro.</h6>
                 <p className="text-dark">
-                  Now in Green. From Ksh. 99900 or Ksh4162/mo. for 24 mo. Footnote*
+                  Now in Green. From Ksh. 99900 or Ksh4162/mo. for 24 mo. *
                 </p>
               </div>
             </div>
@@ -240,10 +240,10 @@ const Home = () => {
                 alt="famous"
               />
               <div className="famous-content position-absolute">
-                <h5 className="text-dark">home speakers</h5>
-                <h6 className="text-dark">Room-filling sound.</h6>
+                <h5 className="text-dark">Latest Release</h5>
+                <h6 className="text-dark">Iphone 14 promax.</h6>
                 <p className="text-dark">
-                  From Ksh. 699 or Ksh. 11658/mo. for 12 mo.*
+                  From Ksh. 134, 000 or Ksh. 1658/mo. for 24 mo.*
                 </p>
               </div>
             </div>
