@@ -227,7 +227,7 @@ const Home = () => {
                 <h5 className="text-dark">hot deal</h5>
                 <h6 className="text-dark">Iphone 13 Pro.</h6>
                 <p className="text-dark">
-                  Now in Green. From Ksh. 99900 or Ksh4162/mo. for 24 mo. *
+                  Now in Green. From Ksh. 99900 or Ksh4162/mo. for 24 mo.*
                 </p>
               </div>
             </div>
