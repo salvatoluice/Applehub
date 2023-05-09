@@ -13,7 +13,7 @@ const SpecialProduct = () => {
             <div className="special-product-content">
               <h5 className="brand">Havels</h5>
               <h6 className="title">
-                Samsung Galaxy Note10+ Mobile Phone; Sim...
+                Apple 4xr smart watch
               </h6>
               <ReactStars
                 count={5}
