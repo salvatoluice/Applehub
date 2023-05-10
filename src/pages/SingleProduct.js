@@ -81,7 +81,7 @@ const SingleProduct = () => {
                 </h3>
               </div>
               <div className="border-bottom py-3">
-                <p className="price">$ 100</p>
+                <p className="price">Ksh. 10000</p>
                 <div className="d-flex align-items-center gap-10">
                   <ReactStars
                     count={5}
@@ -179,7 +179,7 @@ const SingleProduct = () => {
                   <h3 className="product-heading">Shipping & Returns :</h3>
                   <p className="product-data">
                     Free shipping and returns available on all orders! <br /> We
-                    ship all US domestic orders within
+                    deliver aroundnthe country (Kenya) in 
                     <b>5-10 business days!</b>
                   </p>
                 </div>

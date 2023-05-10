@@ -23,7 +23,7 @@ const SpecialProduct = () => {
                 activeColor="#ffd700"
               />
               <p className="price">
-                <span className="red-p">Ksh1, 000</span> &nbsp; <strike>$Ksh. 1, 500</strike>
+                <span className="red-p">Ksh1, 000</span> &nbsp; <strike>Ksh. 1, 500</strike>
               </p>
               <div className="discount-till d-flex align-items-center gap-10">
                 <p className="mb-0">
