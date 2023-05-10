@@ -31,7 +31,7 @@ const Checkout = () => {
                   </li>
                   &nbsp; /
                   <li className="breadcrumb-item total-price active">
-                    Shipping
+                    Delivery
                   </li>
                   &nbsp; /
                   <li
@@ -44,9 +44,9 @@ const Checkout = () => {
               </nav>
               <h4 className="title total">Contact Information</h4>
               <p className="user-details total">
-                Navdeep Dahiya (monud0232@gmail.com)
+                Salvato Luis (salvatoluice5@gmail.com)
               </p>
-              <h4 className="mb-3">Shipping Address</h4>
+              <h4 className="mb-3">Delivery Address</h4>
               <form
                 action=""
                 className="d-flex gap-15 flex-wrap justify-content-between"
@@ -54,7 +54,7 @@ const Checkout = () => {
                 <div className="w-100">
                   <select name="" className="form-control form-select" id="">
                     <option value="" selected disabled>
-                      Select Country
+                      Select County
                     </option>
                   </select>
                 </div>
@@ -96,7 +96,7 @@ const Checkout = () => {
                 <div className="flex-grow-1">
                   <select name="" className="form-control form-select" id="">
                     <option value="" selected disabled>
-                      Select State
+                      Select Estate
                     </option>
                   </select>
                 </div>
@@ -114,7 +114,7 @@ const Checkout = () => {
                       Return to Cart
                     </Link>
                     <Link to="/cart" className="button">
-                      Continue to Shipping
+                      Continue to Delivery
                     </Link>
                   </div>
                 </div>
@@ -140,23 +140,23 @@ const Checkout = () => {
                   </div>
                 </div>
                 <div className="flex-grow-1">
-                  <h5 className="total">$ 100</h5>
+                  <h5 className="total">Ksh. 15400</h5>
                 </div>
               </div>
             </div>
             <div className="border-bottom py-4">
               <div className="d-flex justify-content-between align-items-center">
                 <p className="total">Subtotal</p>
-                <p className="total-price">$ 10000</p>
+                <p className="total-price">Ksh. 1340000</p>
               </div>
               <div className="d-flex justify-content-between align-items-center">
-                <p className="mb-0 total">Shipping</p>
-                <p className="mb-0 total-price">$ 10000</p>
+                <p className="mb-0 total">Delivery</p>
+                <p className="mb-0 total-price">Ksh. 1500</p>
               </div>
             </div>
             <div className="d-flex justify-content-between align-items-center border-bootom py-4">
               <h4 className="total">Total</h4>
-              <h5 className="total-price">$ 10000</h5>
+              <h5 className="total-price">Ksh. 1450000</h5>
             </div>
           </div>
         </div>
