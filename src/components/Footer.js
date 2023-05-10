@@ -42,7 +42,7 @@ const Footer = () => {
                   Kenya
                 </address>
                 <a
-                  href="tel:+254 113 794 219"
+                  href="tel:+254 113 794219"
                   className="mt-3 d-block mb-1 text-white"
                 >
                   +254 113 794 219
@@ -112,7 +112,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <p className="text-center mb-0 text-white">
-                &copy;{new Date().getFullYear()} | All rights Reserved | Developed by <a href='https://linkedin.com/in/salvato-luis' target="_blank">Salvato Luis</a> | <a href="https://salvatoluiz.nettlify.app/">Website</a>
+                &copy;{new Date().getFullYear()} | All rights Reserved | Developed by <a href='https://linkedin.com/in/salvato-luis' target="_blank">Salvato Luis</a> | <a href="https://salvatoluiz.netlify.app" target="_blank">Website</a>
               </p>
             </div>
           </div>
