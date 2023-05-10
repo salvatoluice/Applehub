@@ -114,7 +114,7 @@ const Checkout = () => {
                       Return to Cart
                     </Link>
                     <Link to="/cart" className="button">
-                      Continue to Delivery
+                      Cornfirm
                     </Link>
                   </div>
                 </div>
