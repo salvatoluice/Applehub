@@ -32,7 +32,7 @@ const Cart = () => {
                 </div>
               </div>
               <div className="cart-col-2">
-                <h5 className="price">$ 100</h5>
+                <h5 className="price">Ksh. 13400</h5>
               </div>
               <div className="cart-col-3 d-flex align-items-center gap-15">
                 <div>
@@ -50,7 +50,7 @@ const Cart = () => {
                 </div>
               </div>
               <div className="cart-col-4">
-                <h5 className="price">$ 100</h5>
+                <h5 className="price">Ksh. 13400</h5>
               </div>
             </div>
           </div>
@@ -60,8 +60,8 @@ const Cart = () => {
                 Continue To Shopping
               </Link>
               <div className="d-flex flex-column align-items-end">
-                <h4>SubTotal: $ 1000</h4>
-                <p>Taxes and shipping calculated at checkout</p>
+                <h4>SubTotal: Ksh. 176000</h4>
+                <p>Tax and delivery calculated at checkout</p>
                 <Link to="/checkout" className="button">
                   Checkout
                 </Link>
