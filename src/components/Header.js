@@ -90,11 +90,13 @@ const Header = () => {
                     to="/cart"
                     className="d-flex align-items-center gap-10 text-white"
                   >
+                    <div className="d-flex flex-col gap-1">
                     <img src={cart} alt="cart" />
-                    <div className="d-flex flex-column gap-10">
-                      <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">Ksh. 500</p>
+                    <span>0 (Ksh. 500)</span>
                     </div>
+                    {/* <div className="d-flex flex-column gap-10">
+                      <p className="mb-0"></p>
+                    </div> */}
                   </Link>
                 </div>
               </div>
