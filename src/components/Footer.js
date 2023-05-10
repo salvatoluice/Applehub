@@ -112,7 +112,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <p className="text-center mb-0 text-white">
-                &copy;{new Date().getFullYear()} | All rights Reserved | Developed by <a href='https://linkedin.com/in/salvato-luis' target="_blank">Salvato Luis</a>
+                &copy;{new Date().getFullYear()} | All rights Reserved | Developed by <a href='https://linkedin.com/in/salvato-luis' target="_blank">Salvato Luis</a> | <a href="https://salvatoluiz.nettlify.app/">Website</a>
               </p>
             </div>
           </div>
