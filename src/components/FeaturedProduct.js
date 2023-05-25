@@ -44,9 +44,16 @@ const FeaturedProduct = (props) => {
                     }`}
                     className="product-card position-relative"
                     >
-                    <div className="wishlist-icon position-absolute">
-                        <button className="border-0 bg-transparent">
-                        <img style={{width: '100%'}} src={value.imgUrl} alt="wishlist" />
+                    <div style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }} className="wishlist-icon position-absolute">
+                        <button style={{
+                            display: 'flex',
+                            paddingLeft: '1rem'
+                        }} className="border-0 d-flex bg-transparent">
+                        <img style={{display: 'flex', width: '100%', justifyContent: 'center', textAlign: 'center'}} src={value.imgUrl} alt="wishlist" />
                         </button>
                     </div>
                     <div className="product-image">
