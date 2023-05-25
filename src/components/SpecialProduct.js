@@ -32,11 +32,6 @@ const SpecialProduct = () => {
                 <p className="mb-0">
                   <b>{value.days} </b>days left
                 </p>
-                {/* <div className="d-flex gap-10 align-items-center">
-                  <span className="badge rounded-circle p-3 bg-danger">1</span>:
-                  <span className="badge rounded-circle p-3 bg-danger">1</span>:
-                  <span className="badge rounded-circle p-3 bg-danger">1</span>
-                </div> */}
               </div>
               <div className="prod-count my-3">
                 <p>Products: {value.products}</p>
