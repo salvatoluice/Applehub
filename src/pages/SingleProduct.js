@@ -7,14 +7,19 @@ import ReactImageZoom from "react-image-zoom";
 import Color from "../components/Color";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import watch from "../images/watch.jpg";
 import Container from "../components/Container";
+
 const SingleProduct = () => {
+  const {id} = useParams()
+  console.log(id);
   const props = {
     width: 594,
     height: 600,
     zoomWidth: 600,
+
+    // img: {imgUrl}
 
     img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
   };
