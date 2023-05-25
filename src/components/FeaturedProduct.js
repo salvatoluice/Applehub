@@ -26,7 +26,8 @@ const FeaturedProduct = (props) => {
                     style={{
                         // border: '1px solid gray', 
                         // marginRight: '1rem', 
-                        borderRadius: '8px'
+                        borderRadius: '8px',
+                        width: '300px'
                     }}
                     key={value.id}
                     className={` ${

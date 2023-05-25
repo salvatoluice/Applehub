@@ -2,7 +2,7 @@ const FeaturedData = [
     {
         id: 345,
         title: 'SM-X series Watch',
-        price: 50000,
+        price: 54000,
         type: 'watch',
         brand: 'Havels',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nisi similique illum aut perferendis voluptas, quisquam obcaecati qui nobis officia. Voluptatibus in harum deleniti labore maxime officia esse eos? Repellat?',
@@ -12,7 +12,7 @@ const FeaturedData = [
     {
         id: 84,
         title: 'SM-X series Watch',
-        price: 50000,
+        price: 23000,
         type: 'watch',
         brand: 'series.x',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nisi similique illum aut perferendis voluptas, quisquam obcaecati qui nobis officia. Voluptatibus in harum deleniti labore maxime officia esse eos? Repellat?',
@@ -21,7 +21,7 @@ const FeaturedData = [
     {
         id: 454,
         title: 'SM-X series Watch',
-        price: 50000,
+        price: 35000,
         type: 'watch',
         brand: 'Apple.H',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nisi similique illum aut perferendis voluptas, quisquam obcaecati qui nobis officia. Voluptatibus in harum deleniti labore maxime officia esse eos? Repellat?',
@@ -30,7 +30,7 @@ const FeaturedData = [
     {
         id: 84,
         title: 'SM-X series Watch',
-        price: 50000,
+        price: 28000,
         type: 'watch',
         brand: 'Dropss',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nisi similique illum aut perferendis voluptas, quisquam obcaecati qui nobis officia. Voluptatibus in harum deleniti labore maxime officia esse eos? Repellat?',
