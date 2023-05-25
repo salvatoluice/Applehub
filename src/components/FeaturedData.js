@@ -10,7 +10,7 @@ const FeaturedData = [
         imgUrl2: 'https://images.unsplash.com/photo-1511370235399-1802cae1d32f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdhdGNofGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60'
     },
     {
-        id: 84,
+        id: 804,
         title: 'SM-X series Watch',
         price: 23000,
         type: 'watch',
@@ -28,7 +28,7 @@ const FeaturedData = [
         imgUrl: 'https://images.unsplash.com/photo-1616353329366-b5546ca70b1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFwcGxlJTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
     },
     {
-        id: 84,
+        id: 840,
         title: 'SM-X series Watch',
         price: 28000,
         type: 'watch',

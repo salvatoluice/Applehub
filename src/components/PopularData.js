@@ -9,7 +9,7 @@ const PopularData = [
         imgUrl: 'https://images.unsplash.com/photo-1616353329366-b5546ca70b1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFwcGxlJTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
     },
     {
-        id: 849,
+        id: 879,
         title: 'SM-X series Watch',
         price: 54000,
         type: 'watch',

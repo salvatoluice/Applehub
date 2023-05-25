@@ -2,24 +2,30 @@ import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-import ProductCard from "../components/ProductCard";
-import ReactImageZoom from "react-image-zoom";
 import Color from "../components/Color";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 import { Link, useParams } from "react-router-dom";
 import watch from "../images/watch.jpg";
 import Container from "../components/Container";
+import StoreData from "../components/StoreData";
+import Popular from "../components/Popular";
 
 const SingleProduct = () => {
-  const {id} = useParams()
-  console.log(id);
+  const { id } = useParams();
+
+  // Convert the id parameter to the same data type as the id property in StoreData
+  const parsedId = parseInt(id, 10);
+
+  const filteredData = StoreData.filter(item => item.id === parsedId);
+
+  console.log(filteredData);
   const props = {
     width: 594,
     height: 600,
     zoomWidth: 600,
 
-    // img: {imgUrl}
+    // img: {item?.imgUrl}
 
     img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
   };
@@ -40,38 +46,27 @@ const SingleProduct = () => {
       <Meta title={"Product Name"} />
       <BreadCrumb title="Product Name" />
       <Container class1="main-product-wrapper py-5 home-wrapper-2">
-        <div className="row">
+        {filteredData.map((item) => {
+          return (
+            <div className="row">
           <div className="col-6">
             <div className="main-product-image">
               <div>
-                <ReactImageZoom {...props} />
+                {/* <ReactImageZoom {...props} /> */}
+                <img src={item.imgUrl} alt='image' />
               </div>
             </div>
             <div className="other-product-images d-flex flex-wrap gap-15">
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src={item.imgUrl}
                   className="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src={item.imgUrl}
                   className="img-fluid"
                   alt=""
                 />
@@ -82,11 +77,11 @@ const SingleProduct = () => {
             <div className="main-product-details">
               <div className="border-bottom">
                 <h3 className="title">
-                  Kids Headphones Bulk 10 Pack Multi Colored For Students
+                  {item.title}
                 </h3>
               </div>
               <div className="border-bottom py-3">
-                <p className="price">Ksh. 10000</p>
+                <p className="price">Ksh. {item.price}</p>
                 <div className="d-flex align-items-center gap-10">
                   <ReactStars
                     count={5}
@@ -104,16 +99,16 @@ const SingleProduct = () => {
               <div className=" py-3">
                 <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Type :</h3>
-                  <p className="product-data">Watch</p>
+                  <p className="product-data">{item.type}</p>
                 </div>
                 <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Brand :</h3>
-                  <p className="product-data">Havells</p>
+                  <p className="product-data">{item.brand}</p>
                 </div>
-                <div className="d-flex gap-10 align-items-center my-2">
+                {/* <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Category :</h3>
                   <p className="product-data">Watch</p>
-                </div>
+                </div> */}
                 <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Tags :</h3>
                   <p className="product-data">Watch</p>
@@ -188,7 +183,7 @@ const SingleProduct = () => {
                     <b>5-10 business days!</b>
                   </p>
                 </div>
-                <div className="d-flex gap-10 align-items-center my-3">
+                {/* <div className="d-flex gap-10 align-items-center my-3">
                   <h3 className="product-heading">Product Link:</h3>
                   <a
                     href="javascript:void(0);"
@@ -200,11 +195,13 @@ const SingleProduct = () => {
                   >
                     Copy Product Link
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
+          )
+        })}
       </Container>
       <Container class1="description-wrapper py-5 home-wrapper-2">
         <div className="row">
@@ -307,7 +304,7 @@ const SingleProduct = () => {
           </div>
         </div>
         <div className="row">
-          <ProductCard />
+          <Popular />
         </div>
       </Container>
 
