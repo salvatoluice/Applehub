@@ -119,7 +119,7 @@ const Home = () => {
                   <h6>Music & Gaming</h6>
                   <p>12 Items</p>
                 </div>
-                <img src="images/camera.jpg" alt="camera" />
+                <img width={100} src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG11c2ljfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
@@ -133,42 +133,42 @@ const Home = () => {
                   <h6>Smart Tv</h6>
                   <p>19 Items</p>
                 </div>
-                <img src="images/tv.jpg" alt="camera" />
+                <img width={100} src="https://images.unsplash.com/photo-1461151304267-38535e780c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnQlMjB0dnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Smart Watches</h6>
                   <p>34 Items</p>
                 </div>
-                <img src="images/headphone.jpg" alt="camera" />
+                <img width={100} src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c21hcnQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Phones</h6>
                   <p>65 Items</p>
                 </div>
-                <img src="images/camera.jpg" alt="camera" />
+                <img width={100} src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c21hcnQlMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Macbooks</h6>
                   <p>78 Items</p>
                 </div>
-                <img src="images/camera.jpg" alt="camera" />
+                <img width={100} src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjYm9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Earpods & headhones</h6>
                   <p>165 Items</p>
                 </div>
-                <img src="images/tv.jpg" alt="camera" />
+                <img width={100} src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="camera" />
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
                   <h6>Extras</h6>
                   <p>278 Items</p>
                 </div>
-                <img src="images/headphone.jpg" alt="camera" />
+                <img width={100} src="https://images.unsplash.com/photo-1555626040-e1c570e4a213?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGV4dHJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="camera" />
               </div>
             </div>
           </div>
