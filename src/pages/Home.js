@@ -6,7 +6,7 @@ import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
 import Container from "../components/Container";
 import FeaturedProduct from "../components/FeaturedProduct";
-// import { services } from "../utils/Data";
+import Popular from "../components/Popular";
 
 const Home = () => {
   return (
@@ -263,9 +263,6 @@ const Home = () => {
         </div>
         <div className="row">
           <SpecialProduct />
-          {/* <SpecialProduct />
-          <SpecialProduct />
-          <SpecialProduct /> */}
         </div>
       </Container>
       <Container class1="popular-wrapper py-5 home-wrapper-2">
@@ -275,10 +272,7 @@ const Home = () => {
           </div>
         </div>
         <div className="row">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <Popular />
         </div>
       </Container>
       <Container class1="marque-wrapper home-wrapper-2 py-5">
