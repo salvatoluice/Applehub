@@ -181,7 +181,8 @@ const Home = () => {
             <h3 className="section-heading">Featured Collection</h3>
             <div style={{
               display: 'flex',
-              gap: '1rem'
+              gap: '1rem',
+              width: '100%'
             }} className="">
               <FeaturedProduct />
             </div>
