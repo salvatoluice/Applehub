@@ -263,9 +263,9 @@ const Home = () => {
         </div>
         <div className="row">
           <SpecialProduct />
+          {/* <SpecialProduct />
           <SpecialProduct />
-          <SpecialProduct />
-          <SpecialProduct />
+          <SpecialProduct /> */}
         </div>
       </Container>
       <Container class1="popular-wrapper py-5 home-wrapper-2">

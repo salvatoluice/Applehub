@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
 import prodcompare from "../images/prodcompare.svg";
-import wish from "../images/wish.svg";
-import wishlist from "../images/wishlist.svg";
-import watch from "../images/watch.jpg";
-import watch2 from "../images/watch-1.avif";
 import addcart from "../images/add-cart.svg";
 import view from "../images/view.svg";
 import FeaturedData from './FeaturedData'
@@ -14,19 +10,15 @@ import FeaturedData from './FeaturedData'
 const FeaturedProduct = (props) => {
   
   const { grid } = props;
-  // console.log(grid);
   let location = useLocation();
 
   return (
     <>
-    {FeaturedData.map((value, index) => {
+    {FeaturedData.map((value) => {
         return (
             <>
                 <div
                     style={{
-                        // border: '1px solid gray', 
-                        // marginRight: '1rem', 
-                        borderRadius: '8px',
                         width: '300px'
                     }}
                     key={value.id}

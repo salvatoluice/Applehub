@@ -1,19 +1,22 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
+import SpecialData from "./SpecialData";
 const SpecialProduct = () => {
   return (
     <>
-      <div className="col-6 mb-3">
+    {SpecialData.map((value) => {
+      return (
+        <div key={value.id} className="col-6 mb-3">
         <div className="special-product-card">
           <div className="d-flex justify-content-between">
             <div>
-              <img src="images/watch.jpg" className="img-fluid" alt="watch" />
+              <img style={{width: '300px'}} src={value.imgUrl} className="img-fluid" alt="watch" />
             </div>
             <div className="special-product-content">
-              <h5 className="brand">Havels</h5>
+              <h5 className="brand">{value.brand}</h5>
               <h6 className="title">
-                Apple 4xr smart watch
+                {value.title}
               </h6>
               <ReactStars
                 count={5}
@@ -23,20 +26,20 @@ const SpecialProduct = () => {
                 activeColor="#ffd700"
               />
               <p className="price">
-                <span className="red-p">Ksh1, 000</span> &nbsp; <strike>Ksh. 1, 500</strike>
+                <span className="red-p">Ksh. {value.price}</span> &nbsp; <strike>Ksh. {value.initial}</strike>
               </p>
               <div className="discount-till d-flex align-items-center gap-10">
                 <p className="mb-0">
-                  <b>5 </b>days
+                  <b>{value.days} </b>days left
                 </p>
-                <div className="d-flex gap-10 align-items-center">
+                {/* <div className="d-flex gap-10 align-items-center">
                   <span className="badge rounded-circle p-3 bg-danger">1</span>:
                   <span className="badge rounded-circle p-3 bg-danger">1</span>:
                   <span className="badge rounded-circle p-3 bg-danger">1</span>
-                </div>
+                </div> */}
               </div>
               <div className="prod-count my-3">
-                <p>Products: 5</p>
+                <p>Products: {value.products}</p>
                 <div className="progress">
                   <div
                     className="progress-bar"
@@ -53,6 +56,8 @@ const SpecialProduct = () => {
           </div>
         </div>
       </div>
+      )
+    })}
     </>
   );
 };
