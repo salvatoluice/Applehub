@@ -182,12 +182,10 @@ const Home = () => {
             <div style={{
               display: 'flex',
               gap: '1rem'
-              // flexDirection: 'column'
             }} className="">
               <FeaturedProduct />
             </div>
           </div>
-          {/* <FeaturedProduct /> */}
         </div>
       </Container>
 
