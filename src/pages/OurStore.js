@@ -147,7 +147,7 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <b>Ksh. 30000</b>
                   </div>
                 </div>
                 <div className="random-products d-flex">
@@ -169,7 +169,7 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <b>Ksh. 30000</b>
                   </div>
                 </div>
               </div>
@@ -228,14 +228,14 @@ const OurStore = () => {
                       alt="grid"
                     />
 
-                    <img
+                    {/* <img
                       onClick={() => {
                         setGrid(12);
                       }}
                       src="images/gr.svg"
                       className="d-block img-fluid"
                       alt="grid"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
