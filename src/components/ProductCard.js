@@ -18,13 +18,6 @@ const ProductCard = (props) => {
 
   return (
     <>
-    {/* {fetchedData.map((item) => {
-      return (
-        <div>
-          <p>{item.title}</p>
-        </div>
-      )
-    })} */}
       <div
         className={` ${
           location.pathname == "/product" ? `gr-${grid}` : "col-3"

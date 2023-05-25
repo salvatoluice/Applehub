@@ -5,6 +5,7 @@ import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
 import Container from "../components/Container";
+import FeaturedProduct from "../components/FeaturedProduct";
 // import { services } from "../utils/Data";
 
 const Home = () => {
@@ -158,7 +159,7 @@ const Home = () => {
               </div>
               <div className="d-flex gap align-items-center">
                 <div>
-                  <h6>Earpods & headhones</h6>
+                  <h6>Headphones</h6>
                   <p>165 Items</p>
                 </div>
                 <img width={100} src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="camera" />
@@ -178,11 +179,15 @@ const Home = () => {
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Featured Collection</h3>
+            <div style={{
+              display: 'flex',
+              gap: '1rem'
+              // flexDirection: 'column'
+            }} className="">
+              <FeaturedProduct />
+            </div>
           </div>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {/* <FeaturedProduct /> */}
         </div>
       </Container>
 
