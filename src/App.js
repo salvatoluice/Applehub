@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
@@ -44,7 +44,7 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
               <Route path="product" element={<OurStore />} />
-              <Route path="product/:id" element={<SingleProduct product={StoreData} />} />
+              <Route path="product/:id" element={<SingleProduct />} />
               <Route path="blogs" element={<Blog />} />
               <Route path="blog/:id" element={<SingleBlog />} />
               <Route path="cart" element={<Cart />} />
@@ -63,7 +63,7 @@ function App() {
             </Route>
           </Routes>
         </BrowserRouter>
-      </Provider>
+      {/* </Provider> */}
     </>
   );
 }
