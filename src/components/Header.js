@@ -92,7 +92,7 @@ const Header = () => {
                   >
                     <div className="d-flex flex-col gap-1">
                     <img src={cart} alt="cart" />
-                    <span>0 (Ksh. 500)</span>
+                    {/* <span>0 (Ksh. 500)</span> */}
                     </div>
                     {/* <div className="d-flex flex-column gap-10">
                       <p className="mb-0"></p>
@@ -149,7 +149,7 @@ const Header = () => {
                   <div className="d-flex align-items-center gap-15">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/product">Store</NavLink>
-                    <NavLink to="/new">Add New</NavLink>
+                    {/* <NavLink to="/new">Add New</NavLink> */}
                     <NavLink to="/blogs">Blog</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                   </div>
