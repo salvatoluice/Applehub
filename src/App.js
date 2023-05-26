@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
@@ -22,8 +22,11 @@ import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import NewProduct from "./pages/NewProduct";
+// import StoreData from "./components/StoreData";
 
 function App() {
+
+
   return (
     <>
       <BrowserRouter>

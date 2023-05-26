@@ -7,7 +7,7 @@ import view from "../images/view.svg";
 import StoreData from "./StoreData";
 
 
-const ProductCard = (props) => {
+const ProductCard = (props, { productItems, addToCart }) => {
   
   const { grid } = props;
   // console.log(grid);

@@ -11,7 +11,7 @@ import Container from "../components/Container";
 import StoreData from "../components/StoreData";
 import Popular from "../components/Popular";
 
-const SingleProduct = () => {
+const SingleProduct = ({addToCart, productItems}) => {
   const { id } = useParams();
 
   // Convert the id parameter to the same data type as the id property in StoreData
@@ -153,6 +153,7 @@ const SingleProduct = () => {
                   </div>
                   <div className="d-flex align-items-center gap-30 ms-5">
                     <button
+                      // onClick={() => addToCart(productItems)}
                       className="button border-0"
                       data-bs-toggle="modal"
                       data-bs-target="#staticBackdrop"
