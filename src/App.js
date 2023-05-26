@@ -22,39 +22,48 @@ import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import NewProduct from "./pages/NewProduct";
-// import StoreData from "./components/StoreData";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import StoreData from "./components/StoreData";
 
 function App() {
+  const [productId, setProductId] = useState(null);
+  const handleProductSelection = (id) => {
+    setProductId(id);
+  };
 
+  const product = StoreData.find(item => item.id === productId);
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="product" element={<OurStore />} />
-            <Route path="product/:id" element={<SingleProduct />} />
-            <Route path="blogs" element={<Blog />} />
-            <Route path="blog/:id" element={<SingleBlog />} />
-            <Route path="cart" element={<Cart />} />
-            <Route path="checkout" element={<Checkout />} />
-            <Route path="compare-product" element={<CompareProduct />} />
-            <Route path="wishlist" element={<Wishlist />} />
-            <Route path="login" element={<Login />} />
-            <Route path="new" element={<NewProduct />} />
-            <Route path="forgot-password" element={<Forgotpassword />} />
-            <Route path="signup" element={<Signup />} />
-            <Route path="reset-password" element={<Resetpassword />} />
-            <Route path="privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="refund-policy" element={<RefundPloicy />} />
-            <Route path="shipping-policy" element={<ShippingPolicy />} />
-            <Route path="term-conditions" element={<TermAndContions />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="product" element={<OurStore />} />
+              <Route path="product/:id" element={<SingleProduct product={StoreData} />} />
+              <Route path="blogs" element={<Blog />} />
+              <Route path="blog/:id" element={<SingleBlog />} />
+              <Route path="cart" element={<Cart />} />
+              <Route path="checkout" element={<Checkout />} />
+              <Route path="compare-product" element={<CompareProduct />} />
+              <Route path="wishlist" element={<Wishlist />} />
+              <Route path="login" element={<Login />} />
+              <Route path="new" element={<NewProduct />} />
+              <Route path="forgot-password" element={<Forgotpassword />} />
+              <Route path="signup" element={<Signup />} />
+              <Route path="reset-password" element={<Resetpassword />} />
+              <Route path="privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="refund-policy" element={<RefundPloicy />} />
+              <Route path="shipping-policy" element={<ShippingPolicy />} />
+              <Route path="term-conditions" element={<TermAndContions />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </>
   );
 }

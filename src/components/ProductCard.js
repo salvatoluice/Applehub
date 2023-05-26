@@ -5,9 +5,17 @@ import prodcompare from "../images/prodcompare.svg";
 import addcart from "../images/add-cart.svg";
 import view from "../images/view.svg";
 import StoreData from "./StoreData";
+// import { useDispatch } from 'react-redux';
+// import { addToCart } from '../redux/store'
 
 
-const ProductCard = (props, { productItems, addToCart }) => {
+const ProductCard = (props, { productItems }) => {
+  // const dispatch = useDispatch();
+
+  // const handleAddToCart = () => {
+  //   dispatch(addToCart({ id: product.id, quantity: 1 }));
+  //   console.log(product.id, "added!")
+  // };
   
   const { grid } = props;
   // console.log(grid);
@@ -66,7 +74,9 @@ const ProductCard = (props, { productItems, addToCart }) => {
               <button className="border-0 bg-transparent">
                 <img src={view} alt="view" />
               </button>
-              <button className="border-0 bg-transparent">
+              <button
+              //  onClick={handleAddToCart}
+               className="border-0 bg-transparent">
                 <img src={addcart} alt="addcart" />
               </button>
             </div>
