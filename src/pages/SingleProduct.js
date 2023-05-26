@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
@@ -8,18 +8,42 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { Link, useParams } from "react-router-dom";
 import watch from "../images/watch.jpg";
 import Container from "../components/Container";
-import StoreData from "../components/StoreData";
+import { StoreData } from "../components/StoreData";
 import Popular from "../components/Popular";
 
-const SingleProduct = ({addToCart, productItems}) => {
+export const CartContext = createContext();
+
+const SingleProduct = () => {
   const { id } = useParams();
 
   // Convert the id parameter to the same data type as the id property in StoreData
-  const parsedId = parseInt(id, 10);
+  const item = StoreData.filter((item) => item.id === parseInt(id));
 
-  const filteredData = StoreData.filter(item => item.id === parsedId);
+  const [quantity, setQuantity] = useState(1);
 
-  console.log(filteredData);
+  const { addToCart } = useContext(CartContext);
+
+  // const changeImage = (e) => {
+  //   setImage(e.target.src);
+  // };
+
+  const increase = () => {
+    if (quantity >= 1) {
+      setQuantity(quantity + 1);
+    }
+  };
+
+  const decrease = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const calcPrice = (quantity) => {
+    return quantity * item[0].price;
+  };
+
+  // console.log(filteredData);
   const props = {
     width: 594,
     height: 600,
@@ -46,9 +70,9 @@ const SingleProduct = ({addToCart, productItems}) => {
       <Meta title={"Product Name"} />
       <BreadCrumb title="Product Name" />
       <Container class1="main-product-wrapper py-5 home-wrapper-2">
-        {filteredData.map((item) => {
-          return (
-            <div className="row">
+        {/* {filteredData.map((item) => {
+          return ( */}
+        <div className="row">
           <div className="col-6">
             <div className="main-product-image">
               <div>
@@ -201,8 +225,8 @@ const SingleProduct = ({addToCart, productItems}) => {
             </div>
           </div>
         </div>
-          )
-        })}
+          {/* )
+        })} */}
       </Container>
       <Container class1="description-wrapper py-5 home-wrapper-2">
         <div className="row">

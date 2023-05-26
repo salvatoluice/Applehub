@@ -1,4 +1,4 @@
-const StoreData = [
+export const StoreData = [
     {
         id: 745,
         title: 'Iphone 14Pro Max',
@@ -113,4 +113,4 @@ const StoreData = [
     },
 ]
 
-export default StoreData;
+// export default StoreData;

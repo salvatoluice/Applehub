@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
@@ -18,25 +18,37 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPloicy from "./pages/RefundPloicy";
 import ShippingPolicy from "./pages/ShippingPolicy";
 import TermAndContions from "./pages/TermAndContions";
-import SingleProduct from "./pages/SingleProduct";
+import SingleProduct, { CartContext } from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import NewProduct from "./pages/NewProduct";
-import { Provider } from "react-redux";
-import store from "./redux/store";
+// import { Provider } from "react-redux";
+// import store from "./redux/store";
 import StoreData from "./components/StoreData";
 
 function App() {
-  const [productId, setProductId] = useState(null);
-  const handleProductSelection = (id) => {
-    setProductId(id);
+  const [cartItem, setCartItem] = useState([]);
+
+  const addToCart = (item) => {
+    setCartItem([...cartItem, item]);
   };
 
-  const product = StoreData.find(item => item.id === productId);
+  // local storage
+  useEffect(() => {
+    const json = localStorage.getItem("cartItem");
+    const savedCart = JSON.parse(json);
+    if (savedCart) {
+      setCartItem(savedCart);
+    }
+  }, []);
 
+  useEffect(() => {
+    const json = JSON.stringify(cartItem);
+    localStorage.setItem("cartItem", json);
+  }, [cartItem]);
   return (
     <>
-      {/* <Provider store={store}> */}
+      <CartContext.Provider >
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
@@ -63,7 +75,7 @@ function App() {
             </Route>
           </Routes>
         </BrowserRouter>
-      {/* </Provider> */}
+      </CartContext.Provider>
     </>
   );
 }

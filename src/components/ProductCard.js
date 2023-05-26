@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import prodcompare from "../images/prodcompare.svg";
 import addcart from "../images/add-cart.svg";
 import view from "../images/view.svg";
-import StoreData from "./StoreData";
+import {StoreData} from "./StoreData";
 // import { useDispatch } from 'react-redux';
 // import { addToCart } from '../redux/store'
 
