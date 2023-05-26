@@ -70,8 +70,8 @@ const SingleProduct = () => {
       <Meta title={"Product Name"} />
       <BreadCrumb title="Product Name" />
       <Container class1="main-product-wrapper py-5 home-wrapper-2">
-        {/* {filteredData.map((item) => {
-          return ( */}
+        {item.map((item) => {
+          return (
         <div className="row">
           <div className="col-6">
             <div className="main-product-image">
@@ -177,9 +177,14 @@ const SingleProduct = () => {
                   </div>
                   <div className="d-flex align-items-center gap-30 ms-5">
                     <button
+                      onClick={() => {
+                        addToCart(item);
+                        console.log(item);
+                        // showNotify();
+                      }}
                       // onClick={() => addToCart(productItems)}
                       className="button border-0"
-                      data-bs-toggle="modal"
+                      // data-bs-toggle="modal"
                       data-bs-target="#staticBackdrop"
                       type="button"
                     >
@@ -225,8 +230,8 @@ const SingleProduct = () => {
             </div>
           </div>
         </div>
-          {/* )
-        })} */}
+          )
+        })}
       </Container>
       <Container class1="description-wrapper py-5 home-wrapper-2">
         <div className="row">

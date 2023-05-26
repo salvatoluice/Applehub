@@ -48,7 +48,7 @@ function App() {
   }, [cartItem]);
   return (
     <>
-      <CartContext.Provider >
+      <CartContext.Provider value={{ cartItem, addToCart, setCartItem }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>

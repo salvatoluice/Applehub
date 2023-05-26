@@ -7,7 +7,7 @@ import view from "../images/view.svg";
 import PopularData from "./PopularData";
 
 const Popular = (props) => {
-    console.log(PopularData)
+    // console.log(PopularData)
     const { grid } = props;
     let location = useLocation();
   return (
