@@ -1,13 +1,10 @@
 import React, { useContext } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-import watch from "../images/watch.jpg";
 import { AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import { CartContext } from "../components/CartContex";
-// import CartItem from "./CartItem";
-// import { CartContext } from "./SingleProduct";
 
 const Cart = () => {
 
