@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import compare from "../images/compare.svg";
@@ -6,7 +6,9 @@ import wishlist from "../images/wishlist.svg";
 import user from "../images/user.svg";
 import cart from "../images/cart.svg";
 import menu from "../images/menu.svg";
+import { CartContext } from "./CartContex";
 const Header = () => {
+  const { cartItems } = useContext(CartContext);
   return (
     <>
       <header className="header-top-strip py-3">
@@ -92,7 +94,7 @@ const Header = () => {
                   >
                     <div className="d-flex flex-col gap-1">
                     <img src={cart} alt="cart" />
-                    {/* <span>0 (Ksh. 500)</span> */}
+                    <span>{cartItems.length}</span>
                     </div>
                     {/* <div className="d-flex flex-column gap-10">
                       <p className="mb-0"></p>

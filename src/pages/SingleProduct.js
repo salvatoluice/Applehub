@@ -10,38 +10,20 @@ import watch from "../images/watch.jpg";
 import Container from "../components/Container";
 import { StoreData } from "../components/StoreData";
 import Popular from "../components/Popular";
+import { CartContext } from "../components/CartContex";
 
-export const CartContext = createContext();
+// export const CartContext = createContext();
 
 const SingleProduct = () => {
   const { id } = useParams();
+  const { addToCart } = useContext(CartContext);
+
+  const handleAddToCart = (item) => {
+    addToCart(item);
+  };
 
   // Convert the id parameter to the same data type as the id property in StoreData
   const item = StoreData.filter((item) => item.id === parseInt(id));
-
-  const [quantity, setQuantity] = useState(1);
-
-  const { addToCart } = useContext(CartContext);
-
-  // const changeImage = (e) => {
-  //   setImage(e.target.src);
-  // };
-
-  const increase = () => {
-    if (quantity >= 1) {
-      setQuantity(quantity + 1);
-    }
-  };
-
-  const decrease = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-
-  const calcPrice = (quantity) => {
-    return quantity * item[0].price;
-  };
 
   // console.log(filteredData);
   const props = {
@@ -177,11 +159,7 @@ const SingleProduct = () => {
                   </div>
                   <div className="d-flex align-items-center gap-30 ms-5">
                     <button
-                      onClick={() => {
-                        addToCart(item);
-                        console.log(item);
-                        // showNotify();
-                      }}
+                      onClick={() => handleAddToCart(item)}
                       // onClick={() => addToCart(productItems)}
                       className="button border-0"
                       // data-bs-toggle="modal"

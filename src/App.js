@@ -22,33 +22,15 @@ import SingleProduct, { CartContext } from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import NewProduct from "./pages/NewProduct";
-// import { Provider } from "react-redux";
-// import store from "./redux/store";
-import StoreData from "./components/StoreData";
+import { CartProvider } from "./components/CartContex";
 
 function App() {
   const [cartItem, setCartItem] = useState([]);
 
-  const addToCart = (item) => {
-    setCartItem([...cartItem, item]);
-  };
-
-  // local storage
-  useEffect(() => {
-    const json = localStorage.getItem("cartItem");
-    const savedCart = JSON.parse(json);
-    if (savedCart) {
-      setCartItem(savedCart);
-    }
-  }, []);
-
-  useEffect(() => {
-    const json = JSON.stringify(cartItem);
-    localStorage.setItem("cartItem", json);
-  }, [cartItem]);
+  
   return (
     <>
-      <CartContext.Provider value={{ cartItem, addToCart, setCartItem }}>
+      <CartProvider>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
@@ -75,7 +57,7 @@ function App() {
             </Route>
           </Routes>
         </BrowserRouter>
-      </CartContext.Provider>
+      </CartProvider>
     </>
   );
 }
