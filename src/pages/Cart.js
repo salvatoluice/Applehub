@@ -1,17 +1,38 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import watch from "../images/watch.jpg";
 import { AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
+import CartItem from "./CartItem";
+import { CartContext } from "./SingleProduct";
 
 const Cart = () => {
+
+  const { cartItem, setCartItem } = useContext(CartContext);
+
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  useEffect(() => {
+    const newTotalPrice = cartItem.reduce((acc, item) => acc + item.price, 0);
+    setTotalPrice(newTotalPrice);
+  }, [cartItem]);
+
   return (
     <>
       <Meta title={"Cart"} />
       <BreadCrumb title="Cart" />
       <Container class1="cart-wrapper home-wrapper-2 py-5">
+        {/* <div>
+          {cartItem.map((item, id) => 
+            cartItem.length !== 0 ? (
+              <CartItem key={id} setCartItem={setCartItem} />
+            ) : (
+              <div>Cart is empty</div>
+            )
+          )}
+        </div> */}
         <div className="row">
           <div className="col-12">
             <div className="cart-header py-3 d-flex justify-content-between align-items-center">

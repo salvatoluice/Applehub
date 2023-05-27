@@ -38,10 +38,10 @@ const CartItem = () => {
       {cartItem.map((item, id) => (
         <div key={id} className="cart-item">
           <div className="cart-img">
-            <img src={item.imgUrl} alt="product" />
+            <img src={item?.imgUrl} alt="product" />
           </div>
           <div className="cart-middle">
-            <p className="cart-name">{item.title}</p>
+            <p className="cart-name">{item?.title}</p>
             <div className="cart-btns">
               <button onClick={decrease}>-</button>
               <p className="quantity">{quantity}</p>
