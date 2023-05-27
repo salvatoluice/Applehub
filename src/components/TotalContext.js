@@ -1,5 +1,6 @@
 import React, { createContext, useContext } from 'react';
-import { CartContext } from './CartContext';
+import { CartContext } from './CartContex';
+// import { CartContext } from './CartContext';
 
 export const TotalContext = createContext();
 

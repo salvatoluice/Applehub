@@ -5,22 +5,13 @@ import { AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import { CartContext } from "../components/CartContex";
+import { TotalContext } from "../components/TotalContext";
 
 const Cart = () => {
 
   const { cartItems, removeFromCart } = useContext(CartContext);
 
-  const calculateTotal = (price, quantity) => {
-    return price * quantity;
-  };
-
-  const calculateCartTotal = (cartItems) => {
-    let total = 0;
-    cartItems.forEach((item) => {
-      total += calculateTotal(item.price, item.quantity);
-    });
-    return total;
-  };
+  const total = useContext(TotalContext);
 
   // const { cartItem, setCartItem } = useContext(CartContext);
 
@@ -73,7 +64,7 @@ const Cart = () => {
                 </div>
               </div>
               <div className="cart-col-4">
-                <h5 className="price">Ksh. {calculateTotal(item.price, item.quantity)}</h5>
+                <h5 className="price">Ksh. {item.price * item.quantity}</h5>
               </div>
             </div>
             ))}
@@ -84,7 +75,7 @@ const Cart = () => {
                 Continue To Shopping
               </Link>
               <div className="d-flex flex-column align-items-end">
-                <h4>SubTotal: Ksh. {calculateCartTotal(cartItems)}</h4>
+                <h4>SubTotal: Ksh. {total} </h4>
                 <p>Tax and delivery calculated at checkout</p>
                 <Link to="/checkout" className="button">
                   Checkout
