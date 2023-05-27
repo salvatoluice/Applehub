@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { CartContext } from './SingleProduct';
 
 const CartItem = () => {
     const [quantity, setQuantity] = useState(1);
