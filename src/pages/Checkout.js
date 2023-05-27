@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import watch from "../images/watch.jpg";
 import Container from "../components/Container";
+import { TotalContext } from "../components/TotalContext";
 
 const Checkout = () => {
+  const total = useContext(TotalContext);
+
+  const delivery = total * 0.01;
+
+  const totalCost = delivery + total;
   return (
     <>
       <Container class1="checkout-wrapper py-5 home-wrapper-2">
@@ -147,16 +153,16 @@ const Checkout = () => {
             <div className="border-bottom py-4">
               <div className="d-flex justify-content-between align-items-center">
                 <p className="total">Subtotal</p>
-                <p className="total-price">Ksh. 1340000</p>
+                <p className="total-price">Ksh. {total}</p>
               </div>
               <div className="d-flex justify-content-between align-items-center">
                 <p className="mb-0 total">Delivery</p>
-                <p className="mb-0 total-price">Ksh. 1500</p>
+                <p className="mb-0 total-price">Ksh. {delivery}</p>
               </div>
             </div>
             <div className="d-flex justify-content-between align-items-center border-bootom py-4">
               <h4 className="total">Total</h4>
-              <h5 className="total-price">Ksh. 1450000</h5>
+              <h5 className="total-price">Ksh. {totalCost}</h5>
             </div>
           </div>
         </div>
