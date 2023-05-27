@@ -34,9 +34,30 @@ const CartItem = () => {
     setCartItem(deleteItem);
   }, [deleteItem, setCartItem]);
   return (
-    <div>
-      
-    </div>
+    <>
+      {cartItem.map((item, id) => (
+        <div key={id} className="cart-item">
+          <div className="cart-img">
+            <img src={item.imgUrl} alt="product" />
+          </div>
+          <div className="cart-middle">
+            <p className="cart-name">{item.title}</p>
+            <div className="cart-btns">
+              <button onClick={decrease}>-</button>
+              <p className="quantity">{quantity}</p>
+              <button onClick={increase}>+</button>
+            </div>
+          </div>
+          <div className="cart-right">
+            <p className="cart-price">Ksh. {calcPrice(quantity, item.price)}.00</p>
+            <i
+              onClick={() => removeFromCart(item.id)}
+              className="fa-sharp fa-solid fa-xmark"
+            ></i>
+          </div>
+        </div>
+      ))}
+    </>
   )
 }
 
