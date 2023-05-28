@@ -136,13 +136,13 @@ const Checkout = () => {
                       style={{ top: "-10px", right: "2px" }}
                       className="badge bg-secondary text-white rounded-circle p-2 position-absolute"
                     >
-                      1
+                      12
                     </span>
                     <img className="img-fluid" src={watch} alt="product" />
                   </div>
                   <div>
-                    <h5 className="total-price">gfdhgf</h5>
-                    <p className="total-price">s / #agfgfd</p>
+                    <h5 className="total-price">Havels</h5>
+                    <p className="total-price">Featured serenium watch</p>
                   </div>
                 </div>
                 <div className="flex-grow-1">
