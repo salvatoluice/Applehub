@@ -6,7 +6,6 @@ import Container from "../components/Container";
 import CustomInput from "../components/CustomInput";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, registerWithEmailAndPassword } from "../firebase";
-// import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const Signup = () => {
 
