@@ -19,7 +19,6 @@ const Signup = () => {
 
   const register = (e) => {
     e.preventDefault();
-    // if (!name) alert("Please enter name");
     registerWithEmailAndPassword(name, email, password);
   };
 
